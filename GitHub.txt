@@ -1,0 +1,75 @@
+GitHub
+--------
+Git hub is the platform where we can manage our project source code, documents etc.
+
+GutHub has one central repository.
+
+we can easily deliver project to client using GitHub.
+
+
+
+To work with git hub we need to have some important cammmands
+
+
+git init
+---------
+To initialize the work tree we have use this command.
+
+git add
+---------
+If we want to add files to staging area this command we have to use.
+
+git commit
+-----------
+After the added file in staging area we need push this file local repository.
+This command is used to push files to local repository.
+
+git push
+------------
+If we want to send file to the central repository then we use git push.
+
+git status
+----------
+if we want check status of the file then we use this command.
+
+git log
+---------
+By using this command we can check history who is commited, why commited, when commited.
+
+
+git clone
+---------
+If we want get files from central repository to work tree then we have to run this command.
+In real time we are this command to get entire project once.
+
+git pull
+--------
+This is used to get latest changes from the central repository.
+Every we need to use this in real time.
+
+
+
+Branches in GitHub
+--------------------
+In real time there are multiple developers working in single project.
+
+In git hub we have only central repository. 
+
+And There may be development team, bug fix team , r n d team, project support teams are available.
+
+but if some team have deliver his changes then that very difficult because parrally other teams are working on the same project.
+
+so overcome this problem, branches comes in to picture.
+
+we can create multiple branches for separate teams. so whenever we want to deliver some particular team changes to client we can deliver very somoothly.
+
+when we are creating repo then by default main branch is created.
+
+
+important commands
+git branch <branch name>--> to create branch 
+
+git checkout -- to get particular branch code 
+
+
+
