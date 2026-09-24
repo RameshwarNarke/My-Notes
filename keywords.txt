@@ -1,0 +1,39 @@
+keywords
+----------
+
+keywords are reserved words in python. keywords have special meaning in python.
+
+keywords are predefined reserved words which are used to define structure of the python.
+
+There are 35 keywords are available in python.
+
+
+for example- True, False, None, as, continue etc 
+
+
+Literals in python
+------------------
+
+Types of literals in python
+
+1. Numerical literals
+2. String literals
+3. Boolean literals
+4. Collection Literals( List, Tuple, Set)
+
+Note- In python, we don't need to define variable type. Python automatically takes based on it value.
+
+
+variables in python
+----------------------
+
+variable is used to store data in python.
+
+
+Typecasting in python
+-----------------------
+Typecasting is nothing but converting one variable type to another variable type.
+
+
+
+
