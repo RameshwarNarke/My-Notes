@@ -1,0 +1,89 @@
+Application contains multiple layer and multiple environmnets.
+
+we need to install all apps in all environments to run our application.
+
+And this is not easy . it is taking time .
+
+vesions conflicts can occure.
+
+error prone.
+
+to overcome this challenge docker comes into picture.
+
+
+Docker
+----------
+
+It is free and open source software.
+
+It is used for Containerization.
+
+Containerization means package our application code + required dependency as single unit for execution. 
+
+Docker architecture
+------------------
+1. Docker file
+2. Docker image
+3. Docker Hub
+4.Docker container
+
+Docker file 
+-----------------
+to run application what dependacies are required those dependancies we need to mention docker file.
+ 
+
+Docker file contains set of instructions to create docker image.
+
+
+Docker image
+------------
+
+It is package which contains code + dependencies
+
+Docker registry
+-----------------
+It is place where we can store docker images
+
+ex docker hub
+
+Docker container
+-------------------
+
+When we run docker image then docker container will be created. our application will execute inside docker container.
+
+Container means virtual box.
+
+by using one docker image we can create multiple containers.
+
+
+Docker internally uses virtualization.
+
+
+running one operating system or machine in another  machine means virtualization.
+
+Docker  commands
+--------------------
+
+docker images-> to check how many images are available in system.
+
+docker ps  -> to display list of docker containers running in our system.
+
+docker pull <image-id/image name> -> To download docker image
+
+docker run  <image-id/image name> -> To run docker image
+
+docker rmi <image id> -> to delete docker image
+
+docker rm < container id > -> to delete docker container
+
+docker system prune -a-> delete stopped container and unused images
+
+docker run -p <container port>: <host port> <application name>
+
+docker run -d -p <container port>: <host port> <application name>  : to run application in background . detached mode
+
+
+
+
+
+
