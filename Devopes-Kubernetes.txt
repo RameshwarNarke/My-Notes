@@ -1,0 +1,86 @@
+Kubernetes
+----------------
+
+K8S is an open source orchestration platform.
+
+K8S is used to manage containers.
+
+K8S provides a framework for managing the complex task of deploying , scaling and operating applications in containers.
+
+orchestration nothing but management.
+
+
+orchestration means managing the multiple docker containers
+
+
+Benefits of using Kubernetes
+------------------------------
+
+container orchestration
+
+scalability
+-> It has to adjust capacity based on requirement.
+
+more requests are coming containers increasing, less requests coming containers are decreased.
+
+self-healing
+------------
+any container is crashed it will create container in that place.
+
+load balancing
+---------------
+instead of sending all requests to one container it is sending to multiple container so load is reduced on container.
+
+
+
+k8S Architecture
+--------------------
+
+K8S works based on cluster architecture
+
+cluster means group of servers.
+
+1. control Plane/Master node
+2. worker nodes
+3. kubectl
+
+
+Inside control plane contains
+
+1.api server
+2.schdular
+3.control manager
+4.etcd
+
+Inside worker node below components
+
+POD
+
+Containers
+Docker engine
+kublet
+kube proxy
+
+
+
+
+
+
+K8s architecture coponents
+--------------------------
+
+
+-> API server will receive incoming requests and it will store into ETCD.
+
+Incoming request like create container, delete container etc...
+
+ETCD is cluster database where are going to store that incoming requests
+
+After this schedular comes into picture, Schedular will get available worker nodes information by kubelet.
+kublet is called as worker agent.
+
+
+control plane is talking to worker node and worker node taking to control plane for this we need network communication. 
+
+kube proxy provides netwok for cluster communication.
+

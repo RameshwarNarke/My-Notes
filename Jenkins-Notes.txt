@@ -1,0 +1,124 @@
+Jenkins
+----------
+
+Jenkins is free and opensource software.
+
+Jenkins developed using java language.
+
+Jenkins is used to automate project build and deployment process.
+
+Using Jenkins we can implement CI CD.
+continuous integration and continuous deployment.
+
+Build and deployment process
+-----------------------------------
+
+
+Developers are pushing code to GitHub repository. take latest code
+
+Once code integrated in git hub. we need to compile project source code
+
+execute unit test cases
+
+package the application.
+
+docker image build
+
+create docker container 
+
+
+
+Jenkins setup(refer git for doc)
+--------------
+
+create EC2 instance in aws.
+
+connect to VM machine using moboxitrim.
+
+install java software version.
+
+install Jenkins ( 2.4 version)
+
+
+start Jenkins server
+
+verify Jenkins
+
+vm->security->inbound rules-> edit  ----> to enable port no 8080
+
+unlock Jenkins 
+
+install plugins
+
+
+----------------
+create Jenkins acc
+login to Jenkins account  
+create job to automate build and deployment process
+select pipeline (give job name)
+
+
+Jenkins pipeline create by two ways script approach(groovy lang)  and declarative approach(plain English)
+
+----------------------------------------------------------------------
+ pipeline {
+
+	agent any
+
+	tools{
+		'mvn'
+		
+	}
+ 
+	stages {
+		stage('git clone'){
+
+			steps{
+				git 'url'
+			}
+
+		}
+		stage('mvn build'){
+			steps{
+				sh 'mvn clean package'
+			}
+		}
+		stage('docker image'){
+			steps{
+				sh 'docker build -t <imgname> .'
+			}
+		}
+		stage{'deployment'){
+			steps{
+				
+				sh 'docker run -d -p 9090:8080 <container name> <img name>'
+			}
+		}
+	}
+
+
+ }
+
+-----------------------------------------------------------------------
+
+note -real time master slave architecture
+ 
+we can install mvn two way
+using Linux machine 
+and Jenkins plugin
+
+
+recommended-->
+need to install mvn plugin in Jenkins
+
+
+if you are using any tools we need to configure globle tool in script
+
+setup docker in Jenkins machine (refer git doc) for command
+ restart Jenkins  (add in the url /restart)
+
+map tomcat port to some other port number (default using 8080)
+
+enable port nub 9090 from inbound rules.
+
+
